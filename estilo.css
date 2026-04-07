@@ -1,9 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
 
-:root{
+:root{ --cor-de-fundo:#00246b;
+    --cor-texto-principal:#1da8e3;
+    --cor-texto-secundaria:#1facdb;
+    --botao-ativo:#65bef6;
+    --botao-inativo:#26c7dc;
     
 }
 
+
 body{
-      font-family: "Iosevka Charon", monospace;
+    background: var(--cor-de-fundo);
+    color: var(--cor-texto-principal);
+    font-family: "Bitcount Grid Double Ink", system-ui;
 }
+
+
+.conteudo-principal { 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto;
+ } 
+    
+    .titulo-principal { 
+    text-align: left; 
+    width: 100%; 
+    font-size: 32px;
+ }
+  .titulo-principal span  { 
+    color: #620e9e 
+} 
+    
+    .botao { 
+    background-color: var(--botao-inativo);
+     display: flex; 
+     justify-content: center; 
+     padding: 1em; 
+     font-size: 18px;
+      align-items: center; 
+      width: 100%;
+     }
+
+     .botao:first-child{
+      border-radius: 40px 40px 0 0;
+     }
+
+     @media screen and (min-width:768px){
+      .botoes{
+            display: flex;
+      }
+      
+     }
