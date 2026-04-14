@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-:root{ --cor-de-fundo:#00246b;
-    --cor-texto-principal:#1da8e3;
-    --cor-texto-secundaria:#1facdb;
-    --botao-ativo:#65bef6;
-    --botao-inativo:#26c7dc;
-    
+:root{ 
+    --cor-de-fundo: #FFECC0; 
+    --cor-texto-principal: #FFC29B;
+    --cor-texto-secundaria: #B95E82;  
+    --botao-ativo: #F39F9F; 
+    --botao-inativo:#F39F9F; 
 }
 
 
@@ -30,7 +30,7 @@ body{
     font-size: 32px;
  }
   .titulo-principal span  { 
-    color: #620e9e 
+    color: #ffffff 
 } 
     
     .botao { 
@@ -44,19 +44,36 @@ body{
      }
 
      .botao:first-child{
-      border-radius: 40px 40px 0 0;
+        border-radius: 40px 40px 0 0; 
      }
 
-     @media screen and (min-width:768px){
-      .botoes{
-            display: flex;
-      }
-      .botao:first-child{
-            border-radius: 40px 0 0 0;
-      }
-.botao : :last-child{
-      border-radius: 0 40px 0 0;
- }
+     botao.ativo {
+
+     }
+
+     .aba-counteudo.ativo{
+        display: block;
+     }
+     .abas-texto {
+        background-color: var(--cor-de-fundo);
+        padding: 40px; 
+        border-radius: 0 0 40px 40px;
+     }
+
+@media screen and (min-width: 768px){
+    .botao{
+        display:flex;
+
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0;
+
+    }
+.botao.ativo{
+    background-color: var(--botao-inativo);
+    border-bottom: 4px solid cyan;
 }
-      
-     
+
+
+    
+}
